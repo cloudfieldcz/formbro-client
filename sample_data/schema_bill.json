@@ -1,0 +1,59 @@
+{
+    "type": "object",
+    "properties": {
+        "Company": {
+            "type": "string"
+        },
+        "Address": {
+            "type": "string"
+        },
+        "Operation": {
+            "type": "string"
+        },
+        "ICO": {
+            "type": "string"
+        },
+        "DIC": {
+            "type": "string"
+        },
+        "Date": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "Receipt_Number": {
+            "type": "string"
+        },
+        "Employee": {
+            "type": "string"
+        },
+        "Cashier": {
+            "type": "string"
+        },
+        "Items": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Quantity": {
+                        "type": "integer"
+                    },
+                    "Name": {
+                        "type": "string"
+                    },
+                    "Price": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "Total_Payable": {
+            "type": "string"
+        },
+        "Total_in_EUR": {
+            "type": "string"
+        },
+        "Website": {
+            "type": "string"
+        }
+    }
+}

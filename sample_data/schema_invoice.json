@@ -1,0 +1,54 @@
+{
+    "type": "object",
+    "properties": {
+        "Company": {
+            "type": "string",
+            "example": "V.J. Rott, Praha"
+        },
+        "Address": {
+            "type": "string",
+            "example": "Mal\u00e9 N\u00e1m\u011bst\u00ed 142-I"
+        },
+        "Date": {
+            "type": "string",
+            "format": "date",
+            "example": "7. z\u00e1\u0159\u00ed 1912"
+        },
+        "Customer": {
+            "type": "string",
+            "example": "Josef Sn\u00ed\u017eek, obchodn\u00edk"
+        },
+        "Location": {
+            "type": "string",
+            "example": "N\u011bmec Brod"
+        },
+        "InvoiceNumber": {
+            "type": "string",
+            "example": "16101"
+        },
+        "Items": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Description": {
+                        "type": "string"
+                    },
+                    "Quantity": {
+                        "type": "string"
+                    },
+                    "UnitPrice": {
+                        "type": "string"
+                    },
+                    "TotalPrice": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "TotalAmount": {
+            "type": "string",
+            "example": "155.00"
+        }
+    }
+}
